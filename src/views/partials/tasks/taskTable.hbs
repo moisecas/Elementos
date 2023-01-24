@@ -23,8 +23,13 @@
             <td>{{hora}}</td>
             <td>
                 
-                <button>done</button>
-                <button>delete</button>
+                {{#if done}}
+                    <a href="/toggleDone/{{_id}}">Entregado</a>
+                {{else}}
+                    <a href="/toggleDone/{{_id}}">Prestado</a>
+                {{/if}} 
+                
+                <a href="/delete/{{_id}}">Delete</a>
                 <a href="/edit/{{_id}}">Update</a> 
             </td>
         </tr>

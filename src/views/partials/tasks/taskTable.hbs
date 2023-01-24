@@ -1,0 +1,50 @@
+<table>
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Codigo</th>
+            <th>Lugar</th>
+            <th>Telefono</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tasks}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>{{code}}</td>
+            <td>{{lugar}}</td>
+            <td>{{telefono}}</td>
+            <td>{{fecha}}</td>
+            <td>{{hora}}</td>
+            <td>
+                
+                <button>done</button>
+                <button>delete</button>
+                <a href="/edit/{{_id}}">Update</a> 
+            </td>
+        </tr>
+        {{/each}}
+</table>
+
+
+{{!-- <  <ul>
+        {{#each tasks}}
+        <li>
+            {{title}}
+            <p>{{description}}</p>
+            <p>{{code}}</p>
+            <p>{{lugar}}</p>
+            <p>{{telefono}}</p>
+            <p>{{fecha}}</p>
+            <p>{{hora}}</p>
+            <button>edit</button>
+            <button>delete</button>
+            
+        </li>
+        {{/each}}
+    </ul>> --}}

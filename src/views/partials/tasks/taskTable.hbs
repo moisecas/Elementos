@@ -1,4 +1,5 @@
-<table>
+{{#if tasks}}
+<table class="table table-bordered table-hover table-dark" >
     <thead>
         <tr>
             <th>Elemento</th>
@@ -30,17 +31,27 @@
             <td>
                 
                 {{#if done}}
-                    <a href="/toggleDone/{{_id}}">Entregado</a>
+                    <a class="btn btn-success" href="/toggleDone/{{_id}}">Entregado</a>
                 {{else}}
-                    <a href="/toggleDone/{{_id}}">Prestado</a>
+                    <a class="btn btn-dark" href="/toggleDone/{{_id}}">Prestado</a>
                 {{/if}} 
                 
-                <a href="/delete/{{_id}}">Delete</a>
-                <a href="/edit/{{_id}}">Update</a> 
+                <a class="btn btn-danger" href="/delete/{{_id}}">Delete</a>
+                <a class="btn btn-info" href="/edit/{{_id}}">Update</a> 
             </td>
         </tr>
         {{/each}}
 </table>
+
+{{else}}
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+      <h1>Todo ok. Por favor revisa que todo este completo</h1>
+      <img src="/icons/empty.svg" class="w-75" />
+    </div>
+
+  </div>
+{{/if}}
 
 
 {{!-- <  <ul>

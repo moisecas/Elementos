@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Main</title>
+    <style>
+    /*Media Queries para diferentes tamaños de pantalla*/
+    @media only screen and (max-width: 600px) {
+      /* Estilos para dispositivos pequeños */
+      /* Por ejemplo, puedes reducir el tamaño de la fuente o ocultar ciertos elementos */
+    }
+    @media only screen and (min-width: 600px) {
+      /* Estilos para dispositivos medianos y grandes */
+      /* Por ejemplo, puedes aumentar el tamaño de la
+        fuente o mostrar ciertos elementos */
+    }
+    </style>
 </head>
 <body>
     
     
     {{> navbar }} 
-
-    {{{ body }}}
+    <div class="container" >
+        {{{ body }}}
+    </div>
+    
 
 </body>
 </html>

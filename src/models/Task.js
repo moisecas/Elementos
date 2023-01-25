@@ -5,10 +5,13 @@ const taskSchema = new Schema({
     description: String,
     done: Boolean,
     code: String,
+    nombre: String,
+    escuela: String,
     telefono: String,
     lugar: String,
     fecha: String,
-    hora: String 
+    hora: String,
+    entrega: String,
 }, 
 {
     timestamps: true,

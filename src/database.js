@@ -1,8 +1,10 @@
 import {connect} from 'mongoose';
+import { MONGODB_URI } from './config';
+
 
 (async () => {
     try {
-        const db = await connect('mongodb+srv://moisecas:Moisecas22@cluster0.3ijue.mongodb.net/elementos')
+        const db = await connect(MONGODB_URI)
 
         console.log('Database is connected to', db.connection.name);
     }catch(error){

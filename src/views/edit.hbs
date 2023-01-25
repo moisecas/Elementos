@@ -25,6 +25,16 @@
             <input type="text" name="code" placeholder="Codigo o Cédula" id="code" value="{{task.code}}">
         </div>
 
+        <div>
+        <label for="code">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre de a quien presta" id="nombre" value="{{task.nombre}}">
+        </div>
+
+        <div>
+        <label for="escuela">Escuela o UAA</label>
+        <input type="text" name="escuela" placeholder="Escuela o UAA a la que pertenece" id="escuela" value="{{task.escuela}}">
+        </div>
+
         <div> 
             <label for="lugar">lugar</label>
             <input type="text" name="lugar" placeholder="lugar de uso" id="lugar" value="{{task.lugar}}">
@@ -43,6 +53,11 @@
         <div> 
             <label for="hora">Hora</label>
             <input type="text" name="hora" placeholder="hora" id="hora" value="{{task.hora}}">
+        </div>
+
+        <div> 
+        <label for="entrega">¿Entrega?</label>
+        <input type="text" name="entrega" placeholder="nombre de quien entrega" id="entrega" value="{{task.entrega}}">
         </div>
 
         <button type="submit">Editar</button>
